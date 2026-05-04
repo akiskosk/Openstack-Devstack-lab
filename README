@@ -1,0 +1,64 @@
+# OpenStack DevStack Lab
+
+This project demonstrates the installation and configuration of an OpenStack environment using DevStack in a virtualized setup.
+
+# Overview
+The goal of this project is to deploy a functional OpenStack cloud environment on limited hardware resources and understand the IaaS architecture.
+
+# Environment
+- Host OS: Windows 10
+- Virtualization: Oracle VirtualBox
+- Guest OS: Ubuntu Server 22.04 LTS
+- RAM: 16GB (allocated to VM)
+- Storage: 70GB
+- Networking: NAT with Port Forwarding
+
+# OpenStack Setup
+- Installed using DevStack (single-node / all-in-one)
+- Core services:
+  - Nova (Compute)
+  - Neutron (Networking)
+  - Glance (Images)
+  - Keystone (Authentication)
+  - Horizon (Dashboard)
+
+# Networking
+- NAT configuration due to hardware limitations
+- Port Forwarding:
+  - SSH → 2222
+  - HTTP (Horizon) → 8080
+- Access via: http://localhost:8080/dashboard
+
+# Instances
+- Created test instances using Cirros image
+- Verified functionality using:
+- Horizon Dashboard
+- CLI (`virsh list --all`, console access)
+
+# Limitations
+- Single-node architecture (DevStack)
+- No High Availability
+- Limited networking access (NAT environment)
+- Not suitable for production use
+
+# Future Improvements
+- Multi-node OpenStack deployment
+- Integration with Ansible / Kolla-Ansible
+- Use of external networking and floating IPs
+- Container workloads (Docker / Kubernetes)
+
+# Additional Project (Monitoring Stack)
+
+An additional cloud-based setup was implemented inside an OpenStack instance:
+
+- Node-RED for data ingestion
+- InfluxDB for time-series data storage
+- Grafana for data visualization
+
+This setup demonstrates how OpenStack instances can host real-world applications and monitoring systems.
+
+# Screenshots
+Screenshots and detailed steps are included in the project documentation.
+
+# Author
+Panagiotis Koskinopoulos
