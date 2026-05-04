@@ -60,5 +60,8 @@ This setup demonstrates how OpenStack instances can host real-world applications
 # Screenshots
 Screenshots and detailed steps are included in the project documentation.
 
+### Horizon Dashboard
+![Dashboard](Screenshots/Dashboard.jpg)
+
 # Author
 Panagiotis Koskinopoulos
