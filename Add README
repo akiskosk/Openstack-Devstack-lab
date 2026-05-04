@@ -57,11 +57,5 @@ An additional cloud-based setup was implemented inside an OpenStack instance:
 
 This setup demonstrates how OpenStack instances can host real-world applications and monitoring systems.
 
-# Screenshots
-Screenshots and detailed steps are included in the project documentation.
-
-### Horizon Dashboard
-![Dashboard](Screenshots/Dashboard.jpg)
-
 # Author
 Panagiotis Koskinopoulos
